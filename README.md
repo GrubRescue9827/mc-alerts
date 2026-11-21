@@ -13,3 +13,6 @@ python3 mc-alerts.py
 ```
 
 Or as a systemd service using the provided `.service` file.
+
+# Disclaimer
+You probably don't want to run this on the machine you are hosting your server from. Not only does that not adequately reflect player experience, you may also run into issues with routing (e.g. Hairpin NAT).
