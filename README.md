@@ -3,6 +3,7 @@ A simple NTFY alert script for Minecraft Servers that relies on [StatusPing](htt
 This fixes issues with Minecraft servers behind reverse-proxies, since we want to measure RTT to the Minecraft server, not just to the reverse proxy.
 
 This project is designed to be as simple as possible. Originally written in BASH (not public), this port is significantly faster without as many bugs.
+No AI was used to write this code.
 
 # Usage:
 Can be ran in a shell like so:
