@@ -1,0 +1,20 @@
+[Unit]
+Description=Example minecraft alerts service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+# Use any NON-PRIVILAGED USER!
+User=
+# Workaround for real time logging, may not be good long-term!
+Environment=PYTHONUNBUFFERED=1
+# Directory where StatusPing is
+WorkingDirectory=
+# ChangeMe
+ExecStart=/usr/bin/python3 /path/to/mc-alerts.py
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
